@@ -1,10 +1,12 @@
 /* eslint-disable no-unused-vars */
-import Clock from './components/Clock';
+import React from 'react';
+import Todo from './components/todo';
 
 function App() {
     return (
         <div>
-            <Clock locale="bn-BD" />
+            <Todo />
+            {/* <Clock locale="bn-BD" /> */}
         </div>
     );
 }
