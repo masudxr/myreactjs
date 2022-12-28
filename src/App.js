@@ -1,11 +1,13 @@
+/* eslint-disable import/no-named-as-default */
+/* eslint-disable import/no-named-as-default-member */
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import Todo from './components/todo';
+import Counter from './components/Counter';
 
 function App() {
     return (
         <div>
-            <Todo />
+            <Counter />
             {/* <Clock locale="bn-BD" /> */}
         </div>
     );
