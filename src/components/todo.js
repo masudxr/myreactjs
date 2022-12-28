@@ -42,7 +42,7 @@ function Todo() {
                     value={title}
                     onChange={(e) =>
                         setTodo({
-                            ...todo,
+                            // ...todo,
                             title: e.target.value,
                         })
                     }
@@ -55,7 +55,7 @@ function Todo() {
                     value={description}
                     onChange={(e) =>
                         setTodo({
-                            ...todo,
+                            // ...todo,
                             description: e.target.value,
                         })
                     }

@@ -14,6 +14,7 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
+    <link rel="stylesheet" href="main.css" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -23,21 +24,62 @@
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
+
     -->
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <ul class="nav-list" template>
+      <li>
+        <!-- <div id="root2"></div> -->
+        <a href="/home" id="root2"></a>
+      </li>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <li>
+        <a href="/service" id="root3"></a>
+      </li>
+
+      <li>
+        <a href="/about" id="root4"></a>
+      </li>
+
+      <li>
+        <a href="/contact" id="root5"></a>
+      </li>
+    </ul>
+
+    <!-- <div id="root"></div> -->
+
+    <div>
+      <h2 style="text-align: center; padding: 10px" id="root"></h2>
+      <p style="text-align: center; padding: 10px" id="winCol">
+        Winter Collection New Modern Design
+      </p>
+    </div>
+    <div class="feapro">
+      <section id="product1" class="section-p1">
+        <div class="pro-container">
+          <div class="pro">
+            <img src="../toydoll.jpeg" alt="" />
+            <div class="des">
+              <span>Adidas</span>
+              <h6>Cartoon Astronaut T-shirt</h6>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$175</h4>
+            </div>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+      </section>
+      <div id="Approot"></div>
+    </div>
   </body>
 </html>
