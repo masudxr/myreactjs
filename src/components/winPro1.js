@@ -3,7 +3,7 @@
 /* eslint-disable no-sequences */
 import { useState } from 'react';
 
-function WinProducts() {
+function WinProducts1() {
     const [winPro] = useState({
         proTitle: '',
         description: '',
@@ -11,8 +11,8 @@ function WinProducts() {
     });
     const { proTitle, description, price } = winPro;
 
-    winPro.proTitle = 'Male T-shirt';
-    winPro.description = 'Cartoon Astronaut Male Tshirt';
+    winPro.proTitle = 'FeMale T-shirt';
+    winPro.description = 'Cartoon Astronaut FeMale Tshirt';
     winPro.price = '$150';
     return (
         <section id="product1" className="section-p1">
@@ -29,4 +29,4 @@ function WinProducts() {
         </section>
     );
 }
-export default WinProducts;
+export default WinProducts1;

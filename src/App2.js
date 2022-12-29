@@ -4,16 +4,19 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 // import Clock from './components/Clock';
-// import WinProducts from './components/winpro';
-import Todo from './components/todo';
+// import Todo from './components/todo';
+import WinProducts1 from './components/winPro1';
 
-function App() {
+function App2() {
     return (
         <div>
-            {/* <WinProducts /> */}
-            <Todo />
+            {/* <Counter /> */}
+            <WinProducts1 />
+            {/* <Todo /> */}
+            {/* <Clock locale="bn-BD" /> */}
+            {/* <p> Alhamdulillah</p> */}
         </div>
     );
 }
 
-export default App;
+export default App2;

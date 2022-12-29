@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-
+// setCheckedItems((prevState) =>prevState.filter((item) => item !== eID))
 // function Todo() {
 //     const [todo, setTodo] = useState('');
 //     const [warning, setWarning] = useState(null);
@@ -26,7 +26,7 @@
 // -----------------------------------------------
 
 // useState with object/Array
-
+// setCheckedItems((prevState) =>prevState.filter((item) => item !== eID))
 function Todo() {
     const [todo, setTodo] = useState({
         title: '',
@@ -42,7 +42,7 @@ function Todo() {
                     value={title}
                     onChange={(e) =>
                         setTodo({
-                            // ...todo,
+                            ...todo,
                             title: e.target.value,
                         })
                     }
@@ -55,7 +55,7 @@ function Todo() {
                     value={description}
                     onChange={(e) =>
                         setTodo({
-                            // ...todo,
+                            ...todo,
                             description: e.target.value,
                         })
                     }
