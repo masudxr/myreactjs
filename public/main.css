@@ -17,13 +17,13 @@ body {
   margin: 0 auto;
   color: #fff;
 }
-.headersection {
+.Title6 {
   height: 85px;
   background: rgb(238, 224, 224);
   color: lightblue;
   border-radius: 10px;
 }
-.headersection h2 {
+.h2 {
   color: rgb(5, 0, 0);
   font-size: 40px;
   padding-top: 17px;
@@ -32,10 +32,10 @@ body {
 }
 
 /* navigation bar */
-#header {
+.Title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 7px 10px;
   background: #9d9fa5;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
@@ -45,30 +45,30 @@ body {
   width: 50px;
   height: 50px;
 }
-.nav-list {
+.Container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav-list li {
+.Container li {
   list-style: none;
   padding: 0 20px;
   position: relative;
 }
-.nav-list li a {
+.Container li a {
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
   color: black;
   transition: 0.3s ease;
 }
-.nav-list li a:hover,
-.nav-list li a.active {
+.Container li a:hover,
+.Container li a.active {
   color: #4776e6;
 }
-.nav-list li a:hover::after,
-.nav-list li a.active::after {
+.Container li a:hover::after,
+.Container li a.active::after {
   content: "";
   background-color: #4776e6;
   width: 30%;
