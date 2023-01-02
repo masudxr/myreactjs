@@ -15,18 +15,76 @@ body {
 .Title {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 7px 10px;
-  background: #9d9fa5;
+  /* background: #feffff; */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   height: 89px;
+  margin-left: 100px;
 }
-.Title6 {
-  height: 85px;
-  background: rgb(238, 224, 224);
-  color: lightblue;
-  border-radius: 10px;
+/* child Class */
+.childrenclass{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 75px;
+}
+.childrenclass li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  align-items: center;
+
+}
+/* 2nd banner */
+ .TwoBanner{
+  border: 1px solid #91ec9f;
+}
+.ant-layout .ant-layout-header{
+  background: #ffffff;
+}
+
+.Menuar{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Container li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+  align-items: center;
+
+}
+.Container li a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  transition: 0.3s ease;
+}
+.Container li a:hover,
+.Container li a.active {
+  color: #4776e6;
+}
+.Container li a:hover::after,
+.Container li a.active::after {
+  content: "";
+  background-color: #4776e6;
+  width: 30%;
+  height: 2px;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
 }
 .h2 {
   color: rgb(5, 0, 0);
@@ -37,8 +95,8 @@ body {
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 44px;
 }
 
 /* navigation bar */
@@ -106,15 +164,15 @@ body {
   /* flex-direction: row; */
 }
 .homebanner{
-  border: 1px solid #91ec9f;
+  /* border: 1px solid #91ec9f; */
   padding: 15px 15px;
-  margin: 15px 0;
-  background-image: url(./fun.jpg);
-  width: 100%;
+  /* margin: 15px 0; */
+  background-image: url(./ban.jpg);
+  width: 1500px;
   height: 40vh;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   color: #000;
   text-align: center;
 }
@@ -778,12 +836,5 @@ input {
   margin-bottom: 7px;
 }
 
-/* start media query */
-/* @media (max-width:799px) {
-    .nav-list{
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-} */
+ 
+

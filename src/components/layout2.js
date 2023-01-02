@@ -1,11 +1,7 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable no-multi-assign */
-/* eslint-disable func-names */
-// Header-Content-
-
-import { Divider, Layout, theme } from 'antd';
+import { Divider, Layout } from 'antd';
 import React from 'react';
-import GridMenu from './Grid';
+import CatgBanner from './2ndbanner';
+import Grid2 from './grid2';
 import HeroBanner from './herobanner';
 import Products from './products';
 
@@ -17,45 +13,29 @@ const comment = {
         avatarUrl: './/logo192.png',
     },
 };
-// const categorypro = {
-//     date: new Date(),
-//     text: 'Category Products',
-//     author: {
-//         name: 'Sofa',
-//         avatarUrl: './/sofa.jpg',
-//     },
-// };
+
 const { Header, Content, Footer } = Layout;
 
 const MyLayOut = (React.FC = function () {
-    const {
-        token: { colorBgContainer },
-    } = theme.useToken();
-
     return (
         <Layout className="layout">
-            <Header>
-                <div className="logo" />
-            <Divider orientation="center">
-
-                    <GridMenu />
-            </Divider>
-
-            </Header>
+            <section className="ant-layout layout css-dev-only-do-not-override-k83k30">
+                <Header >
+                <Grid2 />
+                </Header>
             <Content style={{ padding: '0 50px' }}>
-                <div className="site-layout-content" style={{ background: colorBgContainer }} />
+                <div className="site-layout-content" style={{ background: "white" }} />
                 <br /><br /><br /><br />
                 <HeroBanner />
             <br />
             <br />
-            {/* <div className='category'>
-            <div>
-            <Products date={categorypro.date} text={categorypro.text} author={categorypro.author} />
-            </div> 
-            </div> */}
-
-            <br />
+            <Divider orientation="center">
+                <h2> Category Products</h2>
+            </Divider>
+            <CatgBanner />
+            <Divider orientation="center">
             <h2>New Product</h2>
+            </Divider>
             <div className="feapro">
         <Products date={comment.date} text={comment.text} author={comment.author} />
         <Products date={comment.date} text={comment.text} author={comment.author} />
@@ -65,11 +45,12 @@ const MyLayOut = (React.FC = function () {
         <Products date={comment.date} text={comment.text} author={comment.author} />
         <Products date={comment.date} text={comment.text} author={comment.author} />
         <Products date={comment.date} text={comment.text} author={comment.author} />
-    </div>;
+            </div>
             <br />
             <br />
             </Content>
             <Footer style={{ textAlign: 'center' }}>Furniture Shop ©2023 Created by MasudRana</Footer>
+        </section>
         </Layout>
     );
 });

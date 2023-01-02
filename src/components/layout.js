@@ -1,7 +1,3 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable no-multi-assign */
-/* eslint-disable func-names */
-/* eslint-disable react-hooks/rules-of-hooks */
 import {
     ContactsOutlined, CustomerServiceOutlined, HistoryOutlined, MenuFoldOutlined,
     MenuUnfoldOutlined, RightCircleFilled, UserOutlined

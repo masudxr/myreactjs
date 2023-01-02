@@ -1,7 +1,6 @@
 {
   // Theme
   // "workbench.colorTheme": "Dracula",
-
   // config related to code formatting
   "editor.formatOnSave": true,
   "[javascript]": {
@@ -19,6 +18,11 @@
     "source.organizeImports": true
   },
   "eslint.alwaysShowStatus": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
   // emmet
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {

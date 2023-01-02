@@ -1,18 +1,49 @@
-/* eslint-disable no-multi-assign */
-/* eslint-disable func-names */
-import { Col, Row } from 'antd';
+import { ShoppingCartOutlined } from '@ant-design/icons';
 import React from 'react';
 
 const Grid2 = (React.FC = function () {
     return (
-        <Row>
-            <Col span={18} push={6}>
-                logo
-            </Col>
-            <Col span={6} pull={18}>
-                menubar
-            </Col>
-        </Row>
+        <section className="Title">
+            <div>
+                <ul className="Container">
+                    <h2>FURNI</h2>
+
+                    <li>
+                        <a href="/">
+                            <h3>Home</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <h3>Service</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about">
+                            <h3>About</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            <h3>Contact</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div className="childrenclass">
+                {/* <Divider orientation="right"> */}
+                <li>
+                    <a href="/login">
+                        <h4>LogIn</h4>
+                    </a>
+                </li>
+                <ShoppingCartOutlined />
+                <a href="/about">
+                    <h4>Cart</h4>
+                </a>
+                {/* </Divider> */}
+            </div>
+        </section>
     );
 });
 
