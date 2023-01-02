@@ -3,7 +3,6 @@
   // "workbench.colorTheme": "Dracula",
 
   // config related to code formatting
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.formatOnSave": false,
