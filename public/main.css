@@ -107,15 +107,14 @@ body {
 }
 .homebanner{
   border: 1px solid #91ec9f;
-  border-radius: 14px;
-  padding: 25px 15px;
+  padding: 15px 15px;
   margin: 15px 0;
   background-image: url(./fun.jpg);
   width: 100%;
   height: 40vh;
   background-size: cover;
   background-position: center;
-  border-radius: 15px;
+  border-radius: 10px;
   color: #000;
   text-align: center;
 }

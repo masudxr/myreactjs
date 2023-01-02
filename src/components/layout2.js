@@ -1,10 +1,12 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable no-multi-assign */
 /* eslint-disable func-names */
-// Header-Content-Footer
-import { RightCircleFilled } from '@ant-design/icons';
-import { Breadcrumb, Button, Layout, Menu, Space, theme } from 'antd';
+// Header-Content-
+
+import { Divider, Layout, theme } from 'antd';
 import React from 'react';
+import GridMenu from './Grid';
+import HeroBanner from './herobanner';
 import Products from './products';
 
 const comment = {
@@ -24,7 +26,6 @@ const comment = {
 //     },
 // };
 const { Header, Content, Footer } = Layout;
-const name = 'Masud';
 
 const MyLayOut = (React.FC = function () {
     const {
@@ -34,63 +35,17 @@ const MyLayOut = (React.FC = function () {
     return (
         <Layout className="layout">
             <Header>
-                {/* <h2>Hello Masud</h2> */}
                 <div className="logo" />
-                <Menu
-                    theme="light"
-                    mode="horizontal"
-                    defaultSelectedKeys={['2']}
-                    
-                    items={[
-                        {
-                            label: 'FurnisherShop',
-                        },
-                        {
-                            key: '1',
-                            // icon: <UserOutlined />,
-                            label: 'Home',
-                        },
-                        {
-                            key: '2',
-                            // icon: <CustomerServiceOutlined />,
-                            label: 'Service',
-                        },
-                        {
-                            key: '3',
-                            // icon: <HistoryOutlined />,
-                            label: 'About',
-                        },
-                        {
-                            key: '4',
-                            // icon: <ContactsOutlined />,
-                            label: 'Contact',
-                        },
-                    ]}
-                />
+            <Divider orientation="center">
+
+                    <GridMenu />
+            </Divider>
+
             </Header>
             <Content style={{ padding: '0 50px' }}>
-                    <Breadcrumb style={{ margin: '16px 0' }}>
-                    <Breadcrumb.Item>Home</Breadcrumb.Item>
-                    <Breadcrumb.Item>List</Breadcrumb.Item>
-                    <Breadcrumb.Item>App</Breadcrumb.Item>
-                    </Breadcrumb>
                 <div className="site-layout-content" style={{ background: colorBgContainer }} />
                 <br /><br /><br /><br />
-            <div className="homebanner" >
-                <h1>Hello {name}</h1>
-                <h4>Trade-in-offer</h4>
-                <h2>Super Value Deals</h2>
-                <h1> On all Products</h1>
-                <p>Save more with coupons & up to 70% off!!</p>
-                <br />
-                <a href="/shop.html">
-                    <Space wrap>
-                        <Button type="primary">
-                            Shop Now!! <RightCircleFilled />
-                        </Button>
-                    </Space>
-                </a>
-            </div>
+                <HeroBanner />
             <br />
             <br />
             {/* <div className='category'>
@@ -101,16 +56,16 @@ const MyLayOut = (React.FC = function () {
 
             <br />
             <h2>New Product</h2>
-            <div className='feapro'>
-            <Products date={comment.date} text={comment.text} author={comment.author} />
-            <Products date={comment.date} text={comment.text} author={comment.author} />
-            <Products date={comment.date} text={comment.text} author={comment.author} />
-            <Products date={comment.date} text={comment.text} author={comment.author} />
-            <Products date={comment.date} text={comment.text} author={comment.author} />
-            <Products date={comment.date} text={comment.text} author={comment.author} />
-            <Products date={comment.date} text={comment.text} author={comment.author} />
-            <Products date={comment.date} text={comment.text} author={comment.author} />
-            </div>
+            <div className="feapro">
+        <Products date={comment.date} text={comment.text} author={comment.author} />
+        <Products date={comment.date} text={comment.text} author={comment.author} />
+        <Products date={comment.date} text={comment.text} author={comment.author} />
+        <Products date={comment.date} text={comment.text} author={comment.author} />
+        <Products date={comment.date} text={comment.text} author={comment.author} />
+        <Products date={comment.date} text={comment.text} author={comment.author} />
+        <Products date={comment.date} text={comment.text} author={comment.author} />
+        <Products date={comment.date} text={comment.text} author={comment.author} />
+    </div>;
             <br />
             <br />
             </Content>
