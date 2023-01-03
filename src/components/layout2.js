@@ -1,8 +1,12 @@
 import { Divider, Layout } from 'antd';
 import React from 'react';
 import CatgBanner from './2ndbanner';
+import ProCollection from './collectionpro';
+import Offertemp from './delivery';
 import Grid2 from './grid2';
 import HeroBanner from './herobanner';
+import WhoWe from './knowwe';
+import NewArrival from './newArrival';
 import Products from './products';
 
 const comment = {
@@ -23,7 +27,7 @@ const MyLayOut = (React.FC = function () {
         <Header>
           <Grid2 />
         </Header>
-        <Content style={{ padding: '0 50px' }}>
+        <Content style={{ padding: '0px 0px' }}>
           <div
             className="site-layout-content"
             style={{ background: 'white' }}
@@ -35,13 +39,26 @@ const MyLayOut = (React.FC = function () {
           <HeroBanner />
           <br />
           <br />
-          <Divider orientation="center">
-            <h2> Category Products</h2>
-          </Divider>
           <CatgBanner />
           <Divider orientation="center">
-            <h2>New Product</h2>
+            <h2>New Arrival</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
           </Divider>
+          <br />
+          <NewArrival />
+          <br />
+          <Offertemp />
+          <Divider orientation="center">
+          <h2>PRODUCT COLLECTIONS</h2>
+          </Divider>
+          <ProCollection />
+          <WhoWe />
+
+
+
           <div className="feapro">
             <Products
               date={comment.date}
