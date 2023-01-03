@@ -3,14 +3,14 @@ import React from 'react';
 function Form() {
   const [state, setState] = React.useState({
     firstName: '',
-    lastName: ''
+    lastName: '',
   });
 
-function handleChange(evt) {
+  function handleChange(evt) {
     const value = evt.target.value;
     setState({
       ...state,
-      [evt.target.name]: value
+      [evt.target.name]: value,
     });
   }
   return (

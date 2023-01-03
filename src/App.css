@@ -1,61 +1,61 @@
 * {
-    margin: 0px;
-    padding: 0px;
-  }
-  body {
-    background: rgb(102, 226, 97);
-    margin: 15px auto;
-    max-width: 100%;
-    padding: 0 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    /* border-style:solid;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: rgb(102, 226, 97);
+  margin: 15px auto;
+  max-width: 100%;
+  padding: 0 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  /* border-style:solid;
       border-radius: 4px; */
-  }
+}
 /* navigation bar */
 .Title {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 7px 10px;
-    background: #9d9fa5;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    border-radius: 5px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 7px 10px;
+  background: #9d9fa5;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+}
 .Container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .Container li {
-    list-style: none;
-    padding: 0 20px;
-    position: relative;
-  }
-  .Container li a {
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 600;
-    color: black;
-    transition: 0.3s ease;
-  }
-  .Container li a:hover,
-  .Container li a.active {
-    color: #4776e6;
-  }
-  .Container li a:hover::after,
-  .Container li a.active::after {
-    content: "";
-    background-color: #4776e6;
-    width: 30%;
-    height: 2px;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
-  }
-  /* product */
-  /* products feature */ /* products feature */ /* products feature */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Container li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+.Container li a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  transition: 0.3s ease;
+}
+.Container li a:hover,
+.Container li a.active {
+  color: #4776e6;
+}
+.Container li a:hover::after,
+.Container li a.active::after {
+  content: '';
+  background-color: #4776e6;
+  width: 30%;
+  height: 2px;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+/* product */
+/* products feature */ /* products feature */ /* products feature */
 .feapro {
   display: flex;
   align-items: center;
@@ -63,5 +63,4 @@
   flex-flow: wrap;
   border-radius: 25px;
   border: 1px solid #cce7d0;
-
 }
